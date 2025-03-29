@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "url(./imgs/img04.jpeg)",
     "url(./imgs/img05.jpeg)",
     "url(./imgs/img06.jpeg)",
-    "url(./imgs/img07.jpeg)",
-    "url(./imgs/img08.jpeg)",
+    "url(./imgs/img07.jpg)",
+    "url(./imgs/img08.jpg)",
     "url(./imgs/img09.jpeg)",
   ];
 
