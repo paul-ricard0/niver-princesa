@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niver Fabricia</title>
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="base-container w-full min-h-svh flex flex-col items-center base-gradient"
+    >
+      <header
+        class="w-full h-12 bg-pink-300 flex justify-center items-center text-2xl text-white"
+      >
+        Niver Fabricia
+      </header>
+
+      <!-- Infinite Carousel Container -->
+      <div class="carousel-container w-full h-auto relative overflow-hidden">
+        <div class="carousel-wrapper flex h-full">
+          <!-- The slides will be generated in JavaScript for infinite effect -->
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-12 flex-grow grid-rows-3 w-full cards-container gap-4"
+        style="margin-bottom: 1rem"
+      >
+        <div
+          class="w-full min-h-[90px] max-h-[192px] rounded-2xl base-card-gradient col-span-12 xl:col-span-6 row-span-1 text-gray-50 flex flex-col justify-center items-center gap-1"
+          style="padding: 0 2rem"
+        >
+          <span>Dia 05 de Abril - Dona Joaquina</span>
+          <span>Rua Marília De Dirceu, 226 - Lourdes</span>
+        </div>
+        <div
+          class="w-full min-h-[90px] overflow-y-auto rounded-2xl base-card-gradient col-span-12 xl:col-span-6 row-span-3 text-gray-50 gap-1 flex flex-col"
+          style="padding: 2rem 2rem"
+        >
+          <h3
+            class="text-xl text-center bg-violet-700 rounded-2xl"
+            style="margin-bottom: 12px"
+          >
+            Lista de Presença
+          </h3>
+          <div
+            class="overflow-x-auto bg-violet-700 rounded-2xl"
+            style="padding: 1rem"
+          >
+            <table class="min-w-full bg-transparent">
+              <thead
+                style="margin-bottom: 6px"
+                class="border-b border-gray-300"
+              >
+                <tr>
+                  <th class="px-4 py-2 text-left">Nome</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div
+          class="w-full min-h-[90px] max-h-[400px] rounded-2xl base-card-gradient col-span-12 xl:col-span-6 row-span-2 text-gray-50 flex flex-col justify-center gap-1"
+          style="padding: 2rem 2rem"
+        >
+          <span style="margin-bottom: 16px">Marque sua presença</span>
+
+          <div class="flex flex-col gap-2">
+            <span>Nome Completo:</span>
+            <input
+              type="text"
+              id="name"
+              style="padding: 0 0.5rem"
+              class="w-full rounded-md bg-white min-h-[36px] text-black"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <span>Telefone:</span>
+            <input
+              id="phone"
+              type="text"
+              maxlength="15"
+              style="padding: 0 0.5rem"
+              class="w-full rounded-md bg-white min-h-[36px] text-black"
+            />
+          </div>
+          <div class="flex flex-col gap-2" style="margin-bottom: 16px">
+            <span>Email:</span>
+            <input
+              type="email"
+              id="mail"
+              onchange="handlePhone"
+              style="padding: 0 0.5rem"
+              class="w-full rounded-md bg-white min-h-[36px] text-black"
+            />
+          </div>
+          <button
+            id="confirm-button"
+            class="w-full bg-violet-700 text-white rounded-md py-2"
+            style="font-size: 1.2rem"
+          >
+            Confirmar Presença
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

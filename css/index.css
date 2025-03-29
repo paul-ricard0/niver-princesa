@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.base-container {
+  gap: 2rem;
+}
+
+.base-gradient {
+  background: linear-gradient(90deg, #642e66, #e0afe2);
+}
+
+.base-card-gradient {
+  background: linear-gradient(90deg, #febdff, rgba(254, 189, 255, 0.5));
+}
+
+/* Carousel styles */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  position: relative;
+  will-change: transform;
+}
+
+.cards-container {
+  padding: 0 2rem 0 2rem;
+  @media screen and (max-width: 768px) {
+    padding: 0 4px 0 4px;
+  }
+}
+
+.carousel-slide {
+  flex: 0 0 calc(30% - 16px); /* 5 slides at once with spacing */
+  height: 100%;
+  margin: 0 10px; /* Creates 20px spacing between slides */
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  transition: transform 0.3s ease;
+
+  @media screen and (max-width: 1100px) {
+    flex: 0 0 calc(40% - 16px); /* 1 slide at once with spacing */
+  }
+
+  @media screen and (max-width: 700px) {
+    flex: 0 0 calc(80% - 16px); /* 3 slides at once with spacing */
+  }
+
+  @media screen and (max-width: 500px) {
+    flex: 0 0 calc(100% - 16px); /* 1 slide at once with spacing */
+  }
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
