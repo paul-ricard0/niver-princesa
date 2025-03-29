@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const imgsUrl = [
     "url(./imgs/img01.jpeg)",
     "url(./imgs/img09.jpeg)",
+    "url(./imgs/img10.jpeg)",
     "url(./imgs/img03.jpeg)",
     "url(./imgs/img04.jpeg)",
     "url(./imgs/img05.jpeg)",
