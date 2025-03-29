@@ -13,16 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const isMobile = window.innerWidth < 768;
   const slideWidth = isMobile ? 100 : 20;
   const imgsUrl = [
-    "url(./imgs/img09.png)",
-    "url(./imgs/img10.png)",
-    "url(./imgs/img08.jpeg)",
-    "url(./imgs/img11.png)",
     "url(./imgs/img01.jpeg)",
-    "url(./imgs/img02.jpeg)",
+    "url(./imgs/img08.jpeg)",
+    "url(./imgs/img09.png)",
+    "url(./imgs/img02.jpg)",
     "url(./imgs/img12.jpg)",
+    "url(./imgs/img10.png)",
     "url(./imgs/img13.jpg)",
     "url(./imgs/img03.jpeg)",
-    "url(./imgs/img04.jpg)",
+    "url(./imgs/img04.jpeg)",
+    "url(./imgs/img11.jpg)",
     "url(./imgs/img05.jpeg)",
     "url(./imgs/img06.jpeg)",
     "url(./imgs/img07.jpg)",
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Animation variables
   let animationId;
   let position = 0;
-  const speed = 2; // Pixels per frame - lower is slower
+  const speed = 2.3; // Pixels per frame - lower is slower
   const slideWidthPx = carouselContainer.offsetWidth * (slideWidth / 100);
   const totalWidth = slideWidthPx * imgsUrl.length;
 
