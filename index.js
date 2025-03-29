@@ -166,6 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const data = await response.json();
       console.log("Guest added:", data);
       getPresenceList();
+      alert("Prenseça CONFIRMADA! 🩷")
     } catch (error) {
       console.error("Error adding guest:", error);
     }
