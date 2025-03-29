@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "url(./imgs/img06.jpeg)",
     "url(./imgs/img07.jpeg)",
     "url(./imgs/img08.jpeg)",
+    "url(./imgs/img09.jpeg)",
   ];
 
   // Create initial slides
